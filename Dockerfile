@@ -1,6 +1,7 @@
 FROM ubuntu:quantal
 MAINTAINER dominik.burgdoerfer@gmail.com
 
+RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install \
     python-software-properties software-properties-common wget
 RUN wget --quiet -O - \
